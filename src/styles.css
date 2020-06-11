@@ -1,0 +1,139 @@
+/* Fonts and other imports */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* All style variables */
+:root {
+    /* Main background Properties */
+    --bgcolor-main-gradient_1: rgb(252, 3, 140);
+    --bgcolor-main-gradient_2: rgb(101, 18, 255);
+
+    --bgcolor-main-gradient-angle: -20deg;
+
+    /* Text Properties */
+    --text-def-color:rgba(255,255,255,0.87);
+    --text-h2-color:rgba(255,255,255,0.9);
+
+    --text-def-font:'Poppins', sans-serif;
+    --text-h2-font:'Poppins', sans-serif;
+
+    /* Scrollbar Props */
+
+    --scbr-width:6px;
+    --scbr-bgcolor:rgba(0,0,0,0);
+    --scbr-thumb-bgcolor:rgba(255,255,255,0.4);
+}
+
+/* Main Elements */
+
+/* Scrolbar */
+
+::-webkit-scrollbar{
+    width:var(--scbr-width);
+}
+::-webkit-scrollbar-track{
+    background:var(--scbr-bgcolor);
+}
+::-webkit-scrollbar-thumb{
+    background:var(--scbr-thumb-bgcolor);
+    border-radius: 20px;
+}
+
+html{height:100%;}
+
+body {
+    height: 97%;
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    margin:0;
+    background-image: linear-gradient(var(--bgcolor-main-gradient-angle),var(--bgcolor-main-gradient_1),var(--bgcolor-main-gradient_2));
+    font-size:16px;
+}
+/* Menu Elements */
+
+.menu-start {
+    text-align: center;
+    display:block;/* None for now */
+}
+
+.menu-start h1{
+    color:var(--text-h2-color);
+    font-family: var(--text-h2-font);
+}
+
+.menu-start p{
+    color:var(--text-def-color);
+    font-family: var(--text-def-font);
+}
+
+.menu-start button{
+    outline:0;
+    border:none;
+
+    font-family: var(--text-def-font);
+    font-size: 1.6rem;
+
+    background-color: rgba(255,255,255,0.82);
+
+    border-radius: 4px;
+
+    height: 3.4rem;
+    width:8.2rem;
+}
+
+.hidden {display:none;}
+.transparent{opacity:0;}
+
+.menu-main{
+    transition: opacity 200ms;
+    text-align: center;
+}
+
+.menu-main h2{
+    font-family: var(--text-h2-font);
+    color:var(--text-h2-color);
+}
+
+.menu-main hr{
+    width:32rem;
+}
+.menu-main #outbox {
+    margin:1rem auto;
+
+    color:var(--text-def-color);
+
+    padding:3px;
+
+    position: relative;
+
+    background-color: rgba(255,255,255,0.1);
+    outline:0;
+
+    text-align: left;
+
+    overflow-wrap: break-word;
+    overflow:auto;
+
+    border:2px solid white;
+    border-radius: 10px;
+
+    box-shadow: 0px 0px 4px 2px rgba(255, 255, 255, 0.8);
+
+    height:20rem;
+    width:20rem;
+
+    font-family: var(--text-def-font);
+}
+.menu-main #inbox{
+    margin:1rem;
+    border:1.2px solid white;
+    border-radius: 4px;
+    outline:0;
+    height:1.2rem;
+    background-color: rgba(255,255,255,0.1);
+    color:var(--text-def-color);
+    font-family:var(--text-def-font);
+}
+::placeholder{
+    color:var(--text-def-color);
+    opacity:0.89;
+}

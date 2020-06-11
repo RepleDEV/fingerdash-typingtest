@@ -1,0 +1,24 @@
+{
+  "name": "fingerdash-typingtest",
+  "version": "0.0.1",
+  "description": "",
+  "main": "app.process.js",
+  "scripts": {
+    "start": "nodemon app.process.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RepleDEV/fingerdash-typingtest.git"
+  },
+  "author": "RepleDEV",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RepleDEV/fingerdash-typingtest/issues"
+  },
+  "homepage": "https://github.com/RepleDEV/fingerdash-typingtest#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "random-words": "^1.1.1"
+  }
+}

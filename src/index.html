@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fingerdash - YAROTT</title>
+    <link href="styles.css" type="text/css" rel="stylesheet">
+    <script src="randomwords.min.js"></script>
+</head>
+    <body id="lol">
+        <div class="menu-start">
+            <h1>Fingerdash</h1>
+            <p><i>"Yet another regular old typing test."</i></p>
+            <button onclick="buttonClick('start')">Begin</button>
+        </div>
+        <div class="menu-main hidden transparent">
+            <h2>Start typing to begin the test</h2>
+            <div id="outbox">
+                Loading Your text :)
+            </div>
+            <hr>
+            <input id="inbox" placeholder="Type Here!">
+            <button onclick="buttonClick('typesettings')">Settings</button>
+        </div>
+    </body>
+    <script src="script.js"></script>
+</html>
